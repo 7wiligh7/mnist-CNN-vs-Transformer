@@ -1,0 +1,56 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# ---------- PyTorch 权重 ----------
+# 模型权重体积较大，且属于二进制产物，不入库
+*.pth
+*.pt
+*.pkl
+*.pickle
+*.ckpt
+model/
+models/
+checkpoints/
+runs/
+
+# ---------- 数据集 ----------
+# MNIST 会由脚本自动下载（约 76 MB），不入库
+mnist/
+MNIST/
+data/
+datasets/
+
+# ---------- 评估输出 ----------
+*.log
+logs/
+results/
+output/
+
+# ---------- IDE / 编辑器 ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------- 其他 ----------
+.env
+*.tmp

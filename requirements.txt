@@ -1,0 +1,17 @@
+# 本项目在本地开发与验证时使用的依赖
+# 安装：pip install -r requirements.txt
+#
+# torch / torchvision 请按自己的平台选择对应版本（CPU 或 CUDA），
+# 官方安装指引：https://pytorch.org/get-started/locally/
+#
+# 本文件为 CNN 与 Vision Transformer 两种方案共用。
+
+torch>=2.0
+torchvision>=0.15
+
+# 图像读取与张量变换
+numpy>=1.24
+Pillow>=9.5
+
+# 仅 cnn/visualize.py 的弹窗可视化需要，不需要可视化可注释掉本行
+opencv-python>=4.7
